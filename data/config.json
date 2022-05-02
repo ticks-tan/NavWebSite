@@ -1,0 +1,241 @@
+{
+    "logoText": "Ticks的破导航",
+    "oneWord": "万丈高楼平地起，勿在浮沙筑高台。",
+    "data": [
+        {
+            "category": "常用工具",
+            "image": "img/used_tool/category_used_tool.png",
+            "id": "category_used_tool",
+            "content": [
+                {
+                    "name": "Google翻译",
+                    "image": "img/used_tool/google_translate.ico",
+                    "description": "中国式机器翻译",
+                    "url": "https://translate.google.cn/"
+                },
+                {
+                    "name": "高德地图",
+                    "image": "img/used_tool/gd_map.ico",
+                    "description": "很好用的导航，适合路盲",
+                    "url": "https://www.amap.com/"
+                }
+            ]
+        },
+        {
+            "category": "影音媒体",
+            "image": "img/video_music/category_video_music.png",
+            "id": "category_music_video",
+            "content": [
+                {
+                    "name": "哔哩哔哩",
+                    "image": "img/video_music/bilibili.ico",
+                    "description": "大学生真正的大学",
+                    "url": "https://www.bilibili.com/"
+                },
+                {
+                    "name": "YouTub",
+                    "image": "img/video_music/youtub_ico.png",
+                    "description": "国外很流行的视频网站",
+                    "url": "https://www.youtube.com/"
+                },
+                {
+                    "name": "腾讯视频",
+                    "image": "img/video_music/tencent_video.ico",
+                    "description": "看视频的好地方",
+                    "url": "https://v.qq.com/"
+                },
+                {
+                    "name": "抖音网页版",
+                    "image": "img/video_music/douyin.ico",
+                    "description": "国内最火的短视频平台",
+                    "url": "https://www.douyin.com/"
+                }
+            ]
+        },
+        {
+            "category": "设计网站",
+            "image": "img/design_web/category_design_web.png",
+            "id": "category_design_web",
+            "content": [
+                {
+                    "name": "CSS灵感素材",
+                    "image": "img/design_web/inspiration_css.ico",
+                    "description": "CSS的一些使用技巧和灵感",
+                    "url": "https://shiroi.netlify.app/"
+                },
+                {
+                    "name": "UU设计网站",
+                    "image": "img/design_web/uiiiuiii.ico",
+                    "description": "自学设计的网站",
+                    "url": "https://uiiiuiii.com/"
+                },
+                {
+                    "name": "优设导航",
+                    "image": "img/design_web/uisdc.ico",
+                    "description": "设计师的导航网站",
+                    "url": "https://hao.uisdc.com/"
+                },
+                {
+                    "name": "叮当设计",
+                    "image": "img/design_web/dingdang_ico.png",
+                    "description": "大量ppt设计模板",
+                    "url": "https://www.dingdangsheji.com/"
+                },
+                {
+                    "name": "Flaticon",
+                    "image": "img/design_web/flaticon.ico",
+                    "description": "本站图标来源，超级棒的图标网站",
+                    "url": "https://www.flaticon.com/"
+                }
+            ]
+        },
+        {
+            "category": "高清电影",
+            "image": "img/hd_movies/category_hd_movies.png",
+            "id": "category_hd_movies",
+            "content": [
+                {
+                    "name": "4K视界",
+                    "image": "img/hd_movies/4k_world.ico",
+                    "description": "专注于分享国内4K电影",
+                    "url": "https://www.4ksj.com/"
+                },
+                {
+                    "name": "Mini4K",
+                    "image": "img/hd_movies/mini4k.ico",
+                    "description": "迷客电影，蓝光画质电影",
+                    "url": "https://www.mini4k.com/"
+                }
+            ]
+        },
+        {
+            "category": "知名云盘",
+            "image": "img/cloud_disk/category_popular_cloud_disk.png",
+            "id": "category_popular_cloud_disk",
+            "content": [
+                {
+                    "name": "阿里云盘",
+                    "image": "img/cloud_disk/ali_disk_ico.jpg",
+                    "description": "与百度网盘竞争，不限速",
+                    "url": "https://www.aliyundrive.com/"
+                },
+                {
+                    "name": "百度网盘",
+                    "image": "img/cloud_disk/baidu_disk.ico",
+                    "description": "国内最恶心网盘，但是资源最多",
+                    "url": "https://pan.baidu.com/"
+                },
+                {
+                    "name": "天翼云盘",
+                    "image": "img/cloud_disk/tianyi_disk.ico",
+                    "description": "比较良心的国内网盘，虽然热度不高",
+                    "url": "https://cloud.189.cn/"
+                },
+                {
+                    "name": "谷歌云盘",
+                    "image": "img/cloud_disk/google_disk_ico.png",
+                    "description": "国外最大云盘，比国内良心，需要加速器",
+                    "url": "https://www.google.cn/drive/"
+                },
+                {
+                    "name": "OneDrive",
+                    "image": "img/cloud_disk/onedrive_disk.ico",
+                    "description": "微软官方云盘，云盘空间很贵",
+                    "url": "https://outlook.live.com/"
+                },
+                {
+                    "name": "MEGA",
+                    "image": "img/cloud_disk/mega_disk_ico.png",
+                    "description": "同样不限速的国外云盘",
+                    "url": "https://megasoftware.net"
+                }
+            ]
+        },
+        {
+            "category": "享受学习",
+            "image": "img/enjoy_study/category_enjoy_study.png",
+            "id": "category_enjoy_study",
+            "content": [
+                {
+                    "name": "重现化学",
+                    "image": "img/enjoy_study/envisioningchemistry_ico.png",
+                    "description": "新视角发现化学的美",
+                    "url": "https://www.envisioningchemistry.cn/"
+                }
+            ]
+        },
+        {
+            "category": "程序员工具",
+            "image": "img/programmer_tool/category_programmer_tool.png",
+            "id": "category_programmer_tool",
+            "content": [
+                {
+                    "name": "LeetCode",
+                    "image": "img/programmer_tool/leetcode.ico",
+                    "description": "面试必备算法练习网站",
+                    "url": "https://leetcode.cn/"
+                },
+                {
+                    "name": "鸠摩搜书",
+                    "image": "img/programmer_tool/qiumodiary_ico.png",
+                    "description": "免费的电子书下载网站",
+                    "url": "https://www.jiumodiary.com/"
+                },
+                {
+                    "name": "Jquery插件库",
+                    "image": "img/programmer_tool/jquery_library.ico",
+                    "description": "前端JS的第三方库集合",
+                    "url": "https://www.jq22.com/"
+                },
+                {
+                    "name": "变量命名",
+                    "image": "img/programmer_tool/codeif_ico.png",
+                    "description": "不知道怎么命名变量？这个或许可以帮到你",
+                    "url": "https://unbug.github.io/codelf/"
+                },
+                {
+                    "name": "Github",
+                    "image": "img/programmer_tool/github_ico.svg",
+                    "description": "程序员必备网站，全球最大代码托管平台",
+                    "url": "https://github.com/"
+                },
+                {
+                    "name": "gitee",
+                    "image": "img/programmer_tool/gitee.ico",
+                    "description": "国内的github,可以学习Git命令",
+                    "url": "https://gitee.com/"
+                },
+                {
+                    "name": "Obsidian",
+                    "image": "img/programmer_tool/obsidian.ico",
+                    "description": "全平台支持的工程式MarkDown编辑器，写博客写笔记都很棒",
+                    "url": "https://obsidian.md/"
+                },
+                {
+                    "name": "mirai",
+                    "image": "img/programmer_tool/mirai_robot.ico",
+                    "description": "基于Java和Kotlin的开源QQ机器人",
+                    "url": "https://docs.mirai.mamoe.net/"
+                },
+                {
+                    "name": "cplusplus",
+                    "image": "img/programmer_tool/cplusplus.ico",
+                    "description": "C++标准库，C++程序员必备参考网站",
+                    "url": "https://cplusplus.com/"
+                },
+                {
+                    "name": "QT学习文档",
+                    "image": "img/programmer_tool/qtguide_ico.png",
+                    "description": "不错的QT学习网站，只有文档",
+                    "url": "https://qtguide.ustclug.org/"
+                },
+                {
+                    "name": "算法可视化网站",
+                    "image": "img/programmer_tool/algorithms_view_ico.svg",
+                    "description": "可视化的算法网站，帮助你理解算法执行步骤",
+                    "url": "https://the-algorithms.com/"
+                }
+            ]
+        }
+    ]
+}

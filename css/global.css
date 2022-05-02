@@ -1,0 +1,22 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    /* 实现点击id后可以平滑滚动，而不是突然跳转，看起来更流畅 */
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.color_background{
+    background-color: #2c2e2f;
+}
+
+.color_deep_background{
+    background-color: #26282a;
+}
+
+.color_foreground{
+    color: #d6d6d6;
+}
