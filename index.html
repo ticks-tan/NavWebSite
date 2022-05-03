@@ -47,8 +47,10 @@
             <!-- 右边搜索区域 -->
             <div class="right_search_box">
                 <div class="right_search">
-                    <form>
-                        <input type="text" autocomplete="on" placeholder="搜索网站"/>
+                    <form action="search.html" target="_blank">
+                        <label>
+                            <input class="right_search_input" name="website" type="text" autocomplete="on" placeholder="搜索网站"/>
+                        </label>
                     </form>
                 </div>
             </div>
@@ -80,11 +82,16 @@
     </div>
 </div>
 
-<!-- 底部备案信息 -->
-<div class="footer_box"></div>
+<!-- 悬浮按钮 -->
+<div id="float_button">
+    <img src="img/top_up.png" alt="返回顶部">
+</div>
+
 <script type="text/javascript">
     // 加载数据
     loadData();
+    // 初始化浮动按钮
+    initFloatButton();
 </script>
 </body>
 </html>

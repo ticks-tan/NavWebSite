@@ -110,23 +110,28 @@
 .right_search_box{
     width: 100%;
     height: 100px;
-    line-height: 100px;
-    text-align: center;
-    padding-top: 25px;
-    padding-left: 20%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 .right_search{
-    position: relative;
     width: 60%;
     height: 50%;
-    text-align: center;
+    transition: all 500ms;
 }
+.right_search:hover{
+    width: 62%;
+    height: 52%;
+}
+
 .right_search form{
     height: 100%;
     font-size: 15px;
 }
-.right_search form input{
-    float: left;
+.right_search_input{
     color: #ddd;
     width: 100%;
     background-color: #3d4044;
@@ -134,7 +139,8 @@
     border-radius: 5px;
     outline: 0;
     height: 100%;
-    font-size: 1pc;
+    font-size: x-large;
+    padding-left: 10px;
 }
 .right_content_box{
     width: 100%;
@@ -222,3 +228,20 @@
     overflow: clip;
 }
 
+#float_button{
+    position: fixed;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: #3d4044;
+    right: 20px;
+    bottom: 15%;
+    transition: all 500ms;
+    display: none;
+}
+
+#float_button img{
+    width: 100%;
+    height: 100%;
+}

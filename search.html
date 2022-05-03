@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>导航搜索结果</title>
+    <link type="text/css" rel="stylesheet" href="css/global.css">
+    <link type="text/css" rel="stylesheet" href="css/search.css">
+    <script type="text/javascript" src="js/search.js"></script>
 </head>
-<body>
-$END$
+<body class="color_deep_background">
+
+<div class="main_container">
+  <!-- 顶部导航栏 -->
+  <div class="top_box color_background">
+    <!-- logo -->
+    <div class="top_menu_logo">
+      <a href="index.html" target="_self" class="color_foreground">Ticks的破导航</a>
+    </div>
+    <!-- 顶部 Github 图标 -->
+    <div class="top_menu_github">
+      <a href="https://github.com/ticks-tan" target="_blank">
+        <img src="img/title_github.png" alt="Github">
+      </a>
+    </div>
+  </div>
+
+  <!-- 中间搜索框 -->
+  <div class="search_container">
+    <div class="search_box">
+      <label class="search_label">
+        <input id="search_input_id" class="search_input" placeholder="搜索网站" type="text">
+      </label>
+    </div>
+  </div>
+
+  <!-- 实际搜索结果展示 -->
+  <div class="result_container">
+    <div class="color_foreground result_show_text">
+      搜索结果
+      <i><img class="result_show_txt_icon" src="img/result_show_right.png" alt=""></i>
+    </div>
+    <div class="result_box" id="result_box_id">
+
+      <!--
+      <div class="result_item" url="https://github.com/">
+        <div class="result_content_left">
+          <img src="img/title_github.png" alt=Github">
+        </div>
+        <div class="result_content_right">
+          <div class="result_content_name">Github</div>
+          <div class="result_content_des">全球最大代码托管平台</div>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </div>
+
+</div>
+
+<!-- 悬浮按钮 -->
+<div id="float_button_id">
+  <img src="img/top_up.png" alt="返回顶部">
+</div>
+
+<script type="text/javascript">
+  // 文档就绪后可以检查URL
+  window.onload = function (){
+    checkUrl();
+  }
+  // 初始化搜索框事件
+  initSearchBox();
+  // 初始化悬浮按钮
+  initFloatButton();
+</script>
 </body>
 </html>

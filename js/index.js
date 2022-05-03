@@ -165,8 +165,7 @@ class HttpClient {
 }
 
 
-// 解析 Json
-
+// 解析 Json 并添加元素
 function loadData(){
     // 左边项目
     const left_box = document.getElementById("left_category_box_id");
@@ -231,3 +230,37 @@ function loadData(){
     });
 
 }
+
+// 初始化浮动按钮点击事件和滚动事件
+function initFloatButton(){
+    const float_button = document.getElementById("float_button");
+
+    if (float_button != null) {
+        // 获取距离窗口顶部距离
+        let top_size = window.scrollY;
+        // 添加滚动监听
+        window.addEventListener("scroll", function () {
+            let top = window.scrollY;
+            if (top - top_size > 200) {
+                // 大于一定值，显示浮动按钮
+                setTimeout(function (){
+                    float_button.style.display = "block";
+                }, 10);
+            } else {
+                setTimeout(function (){
+                    float_button.style.display = "none";
+                }, 10);
+            }
+        });
+
+        // 添加点击事件
+        float_button.onclick = function (){
+            // 平滑滚动到顶部
+            window.scrollTo({
+                top: 0,
+                behavior : "smooth"
+            });
+        }
+    }
+}
+
