@@ -1,20 +1,24 @@
+/* 整个网页盒子 */
 .container_box{
-    /* CSS3让子元素表格样式显示 */
+    /* CSS3 让子元素表格样式显示 */
     display: table;
     table-layout: fixed;
     /* 方向从左到右 */
     width: 100%;
     height: 100%;
     border-radius: 4px;
+    /* 溢出部分隐藏，不知道为啥会溢出 */
     overflow: hidden;
 }
 
+/* 网页分为左边和右边两栏，两个栏目都是主布局子元素 */
 .container_item{
     background-color: #2c2e2f;
     height: 100%;
     vertical-align: top;
 }
 
+/* 左边的栏目，显示分类 */
 .container_left{
     display: table-cell;
     width: 20%;
@@ -22,6 +26,7 @@
     z-index: 99;
 }
 
+/* 左边顶部栏目，显示标题 */
 .left_top_box{
     height: 60px;
     width: 100%;
@@ -29,7 +34,7 @@
     text-align: center;
 }
 .left_top_box a {
-    font-size: xx-large;
+    font-size: x-large;
 }
 .left_top_box a:hover{
     color: #448AFF;
@@ -41,19 +46,25 @@
     background-color: rgba(180,180,180, .1);
 }
 
+/* 左边分类盒子，子元素为具体分类 */
 .left_category{
     width: 100%;
     height: 100%;
     padding-right: 5px;
 }
 
+/* 所有分类使用同一个样式 */
 .left_category_item{
     width: 100%;
     height: 60px;
+    /* CSS3 弹性盒子，方便控制子元素排布，不用使用 float 了 */
     display: flex;
+    /* 子元素以行的形式排布 */
     flex-direction: row;
     flex-wrap: nowrap;
+    /* 水平方向排布 */
     justify-content: center;
+    /* 每个子元素在垂直方向排布 */
     align-items: center;
 }
 .left_category_item img{
@@ -62,12 +73,13 @@
 }
 
 .left_category_item a{
-    font-size: x-large;
+    font-size: larger;
 }
 .left_category_item a:hover{
     color: white;
 }
 
+/* 邮编栏目 */
 .container_right{
     display: table-cell;
     width: 80%;
@@ -76,20 +88,23 @@
     padding-bottom: 20px;
 }
 
+/* 右边顶部栏目，主要显示一言和我的Github */
 .right_top_box{
     width: 100%;
     height: 60px;
     line-height: 60px;
     text-align: center;
 }
+/* 一言，可以通过配置文件改变 */
 .right_top_one_word{
     text-align: center;
-    font-size: x-large;
+    font-size: larger;
     float: left;
     width: fit-content;
     height: 100%;
     margin-left: 20px;
 }
+/* github */
 .right_top_github{
     height: 100%;
     width: auto;
@@ -98,25 +113,26 @@
     margin-right: 20px;
 }
 .right_top_github a{
-    display: inline-block;
+    display: block;
     height: 100%;
 }
 .right_top_github a img{
-    display: inline-block;
+    display: block;
     height: 60%;
-    margin-top: 20%;
+    margin-top: 30%;
 }
 
 .right_search_box{
     width: 100%;
     height: 100px;
-
+    /* CSS3 弹性盒子 */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
+/* 右栏搜索部分 */
 .right_search{
     width: 60%;
     height: 50%;
@@ -131,6 +147,7 @@
     height: 100%;
     font-size: 15px;
 }
+/* 输入框 */
 .right_search_input{
     color: #ddd;
     width: 100%;
@@ -139,14 +156,16 @@
     border-radius: 5px;
     outline: 0;
     height: 100%;
-    font-size: x-large;
+    font-size: larger;
     padding-left: 10px;
 }
+
+/* 右栏具体分类下网站 */
 .right_content_box{
     width: 100%;
     height: 100%;
 }
-
+/* 显示分类名称，由图标和文字组成 */
 .right_content_category_box{
     width: 100%;
     height: 40px;
@@ -172,6 +191,7 @@
     margin-top: 40%;
 }
 
+/* 具体分类下的项目盒子，容纳具体项目 */
 .right_content_item_box{
     width: 100%;
     display: flex;
@@ -181,6 +201,7 @@
     align-items: center;
     margin-top: 10px;
 }
+/* 具体分类项，由左右两边构成，左边显示图标，右边显示名称和简单介绍 */
 .right_content_item{
     background-color: #3d4044;
     border-radius: 5px;
@@ -216,7 +237,7 @@
 }
 .right_content_des{
     color: #d6d6d6;
-    font-size: medium;
+    font-size: small;
     margin: 5px;
     overflow: clip;
 }
@@ -228,6 +249,7 @@
     overflow: clip;
 }
 
+/* 浮动按钮，用于返回顶部 */
 #float_button{
     position: fixed;
     z-index: 999;

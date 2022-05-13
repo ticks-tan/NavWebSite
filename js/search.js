@@ -1,3 +1,4 @@
+// 搜索结果，也封装成类，方便构造，结构和样式都是 index.html 里面的
 class ResultItem
 {
     constructor(img, name, des, url) {
@@ -41,7 +42,7 @@ class ResultItem
     }
 }
 
-// 搜索结果为空显示项目
+// 搜索结果为空时显示的项目
 function createResultEmptyItem()
 {
     let item = new ResultItem("img/cry_face.png", "没有结果-_-",
@@ -50,11 +51,12 @@ function createResultEmptyItem()
     return item.createObj();
 }
 
-// Http客户端封装
+// Http 请求客户端封装
 class HttpClient {
     constructor() {
     }
 
+    // GET 请求
     get(url, call){
         // 打开一个 http 请求
         const http_request = new XMLHttpRequest();
@@ -70,7 +72,7 @@ class HttpClient {
     }
 }
 
-// 搜索结果
+// 搜索结果，q为输入内容
 function searchResult(q){
     // 判断是否为空
     if (q != null){
@@ -79,9 +81,10 @@ function searchResult(q){
         let item_array = [];
 
         if (!result_box) return;
+        // 这里采用简单的正则表达式匹配来搜索 -- 只要包含至少一个搜索关键字就匹配，同时忽略大小写
         let query = new RegExp("([a-z0-9A-Z ]*)" + "([" + q + "])+" + "([a-z0-9A-Z ]*)", "i");
 
-        // 清空结果
+        // 清空结果，上一次搜索结果可能有残留结果
         let child = result_box.firstElementChild;
         while (child){
             result_box.removeChild(child);
@@ -125,6 +128,7 @@ function searchResult(q){
 function initSearchBox(){
     let search_input = document.getElementById("search_input_id");
     if (search_input){
+        // 这里没有搜索按钮，通过监听回车案件实现表单提交 -- 网上抄的这段
         search_input.onkeydown = function (event){
             let ev = event || window.event;
             let code = ev.keyCode || ev.which || ev.code;
@@ -141,10 +145,14 @@ function checkUrl(){
     // 获取参数部分url --> ?search=xxx
     const params = decodeURI(window.location.search);
     const search_input = document.getElementById("search_input_id");
+    // 检查参数是否匹配，如果匹配就提取搜索关键字，然后执行搜索。
     let query = "";
+    // 是否以 ？website= 开头
     if (params.startsWith("?website=")){
+        // 向后搜索等号
         let pos = params.indexOf("=", 7);
         if (pos !== -1){
+            // 截取等号后面的内容，即为搜索关键字
             query = params.slice(pos + 1);
         }
     }
